@@ -10,4 +10,12 @@ public class destruidor : MonoBehaviour
         GameObject.Destroy(collider);
     }
 
-}
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        GameObject.Destroy(collider.gameObject);
+    }
+    
+        
+    }
+
+
